@@ -10,9 +10,10 @@ public:
 	}
 	void show()
 	{
+		int c = (x * x) + (y * y) + (z * z);
 		std::cout << '\n' << x << '\n' << y << '\n' << z;
 
-		std::cout << '\n' << "model vector:" << ' ' << x * y;
+		std::cout << '\n' << "model vector:" << ' ' << sqrt(c);
 	}
 private:
 	double x = 0;
@@ -21,6 +22,6 @@ private:
 };
 int main()
 {
-	Vector v(10, 10, 10);
-	v.show();
+	Vector v22(5, 5, 5);
+	v112.show();
 }
